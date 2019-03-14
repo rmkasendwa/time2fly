@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ul,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+li {
+	list-style-type: none;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.main-header {
+    background: linear-gradient(#8FAADC, transparent);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.main-header .page-title {
+    display: block;
+    text-transform: uppercase;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    width: 280px;
+    float: left;
+}
+.main-header .page-title .logo,
+.main-header .page-title h1 {
+	float: left;
+}
+.main-header .page-title .logo {
+	width: 80px;
+	height: 80px;
+	background-image: url(/img/logo.svg);
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.main-header .page-title h1 {
+	width: 200px;
+	padding: 11px 0;
+}
+.page-title .title {
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.page-title .title span:first-child {
+	color: #00f;
+}
+.page-title .title span:nth-child(2) {
+	color: #ccc;
+}
+.page-title .title span:last-child {
+	color: #f00;
+}
+.page-title .tag-line {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000;
+}
+
+.main-menu {
+	float: right;
+	padding-top: 20px;
+}
+.main-menu li,
+.main-menu a {
+	float: left;
+}
+.main-menu li a {
+	padding: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 30px;
+}
+.main-menu li.selected a {
+	border-bottom: 2px solid #f00;
+}
+video {
+	display: block;
+	width: 100%;
+}
