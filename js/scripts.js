@@ -1,6 +1,6 @@
 $(function() {
 	var mainHeader = $('.main-header'),
-		clockTime = $('.clock-time'),
+		clockTime = $('.widget.clock'),
 		videoElement = $('video').on('contextmenu', function() {
 			return false;
 		})[0];
@@ -11,7 +11,7 @@ $(function() {
 			mainHeader.removeClass('opaque');
 		}
 	}).trigger('scroll');
-	setTimeout(function() {
+	setInterval(function() {
 		var currentDateTime = new Date();
 		clockTime.text(currentDateTime.toString("hh:mm") + ' ' + (currentDateTime.getHours() >= 12 ? "PM" : "AM"));
 	}, 1000);
