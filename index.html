@@ -8,6 +8,7 @@
     <title>Time2Fly</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png">
+    <script src="js/date.min.js"></script>
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/scripts.js"></script>
 </head>
@@ -23,19 +24,36 @@
             	<div class="tag-line">Tours &amp; Travel Ltd</div>
             </h1>
         </a>
-        <div class="widgets"></div>
         <nav class="main-menu">
-        	<ul>
-        		<li class="selected"><a href="#">Home</a></li>
-        		<li><a href="#">About Us</a></li>
-        		<li><a href="#">Services</a></li>
-        		<li><a href="#">Trips</a></li>
-        		<li><a href="#">Contact Us</a></li>
-        	</ul>
+            <div class="widgets">
+                <div class="widget clock">
+                    <div class="widget-icon clock-icon"></div>
+                    <div class="widget-label clock-time"></div>
+                </div>
+                <div class="widget temperature">
+                    <div class="widget-icon temperature-icon"></div>
+                    <div class="widget-label temperature-label">24&#8451;</div>
+                </div>
+            </div>
+            <ul class="clearfix">
+                <li class="selected"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-    <section>
-    	<video src="vidz/video.mp4" autoplay loop muted></video>
+    <section class="main-section">
+        <video src="vidz/video.mp4" autoplay loop muted></video>
+        <h1 class="title main-title">
+        	<span>Welcome To Time2Fly</span>
+        	<span>Tours And Travel</span>
+        </h1>
+        <div class="slider"></div>
+        <h1 class="title why-book">Why Book With Us</h1>
+        <div class="services">[THE ICONS WILL BE HERE]</div>
+        <div class="travel-quote">Explore the world, traveling is knowledge</div>
     </section>
 </body>
 
