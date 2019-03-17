@@ -103,7 +103,6 @@ li {
 .widget.temperature {
 	padding-left: 50px;
 	background-image: url(../img/weather.png);
-	width: 50px;
 	background-size: 50px auto;
 }
 .main-menu li,
