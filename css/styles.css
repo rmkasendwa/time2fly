@@ -12,12 +12,6 @@ h1 {
 li {
     list-style-type: none;
 }
-.clearfix:before,
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
 .main-header {
     background: linear-gradient(rgba(31, 78, 121, .5), transparent);
     position: fixed;
@@ -78,9 +72,15 @@ li {
     font-weight: normal;
     color: #fff;
 }
-.main-menu {
+.main-menu,
+.main-menu .widgets {
     float: right;
+}
+.main-menu {
     padding-top: 20px;
+}
+.main-menu ul {
+	clear: both;
 }
 .main-menu .widgets {
 	float: right;
@@ -125,11 +125,12 @@ video {
 }
 .main-section .title {
 	font-weight: normal;
-	font-size: 36px;
-	line-height: 70px;
+	font-size: 20px;
+	line-height: 40px;
 	text-align: center;
 }
-.main-title {
+.main-section .main-title {
+	font-size: 36px;
 	padding: 20px 0;
 	background-color: rgb(31, 78, 121);
 	color: #fff;
@@ -154,11 +155,29 @@ video {
 	text-transform: uppercase;
 }
 .services {
-	height: 200px;
-	background-color: #ccc;
+	padding-bottom: 20px;
+	background: linear-gradient(to top, #00f 20%, transparent);
+}
+.service {
+	cursor: pointer;
+}
+.service .service-icon {
+	width: 150px;
+	height: 150px;
+	margin: 20px auto;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.service .service-title {
+	width: 100%;
+	background-color: #00f;
+	color: #fff;
 	text-align: center;
-	line-height: 200px;
-	font-weight: bold;
+	text-transform: uppercase;
+	width: 150px;
+	padding: 10px;
+	border: 1px solid #fff;
+	margin: 0 auto;
 }
 .travel-quote {
 	font-size: 20px;
