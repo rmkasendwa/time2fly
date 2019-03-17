@@ -19,14 +19,18 @@ li {
     clear: both;
 }
 .main-header {
-    background: linear-gradient(rgba(143, 170, 220, .5), transparent);
+    background: linear-gradient(rgba(31, 78, 121, .5), transparent);
     position: fixed;
     width: 100%;
     z-index: 9999;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     transition: background-color .3s;
 }
 .main-header.opaque {
-	background-color: rgb(143, 170, 220);
+	background-color: rgb(31, 78, 121);
 }
 .main-header .page-title {
     display: block;
@@ -127,6 +131,8 @@ video {
 }
 .main-title {
 	padding: 20px 0;
+	background-color: rgb(31, 78, 121);
+	color: #fff;
 }
 .main-title span {
 	display: block;
@@ -155,10 +161,10 @@ video {
 	font-weight: bold;
 }
 .travel-quote {
-	font-size: 36px;
+	font-size: 20px;
 	background-color: #00f;
 	color: #fff;
-	line-height: 70px;
+	line-height: 40px;
 	text-align: center;
 	text-transform: uppercase;
 }
