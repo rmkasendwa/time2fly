@@ -164,8 +164,27 @@ video {
 	width: 150px;
 	height: 150px;
 	margin: 20px auto;
+	border: 1px solid #333;
 	border-radius: 50%;
-	background-color: #fff;
+	background-size: cover;
+}
+.service-icon.visa {
+	background-image: url(../assets/visa.svg);
+}
+.service-icon.aviation {
+	background-image: url(../assets/aviation.png);
+}
+.service-icon.umbrella {
+	background-image: url(../assets/beach-umbrella.png);
+}
+.service-icon.ticket {
+	background-image: url(../assets/ticket.svg);
+}
+.service-icon.tourist {
+	background-image: url(../assets/tourist.png);
+}
+.service-icon.reservation {
+	background-image: url(../assets/reservation.png);
 }
 .service .service-title {
 	width: 100%;
