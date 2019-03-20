@@ -167,24 +167,30 @@ video {
 	border: 1px solid #333;
 	border-radius: 50%;
 	background-size: cover;
+	background-position: center;
+	background-size: 100%;
+	transition: background-size .3s;
+}
+.service .service-icon:hover {
+	background-size: 120%;
 }
 .service-icon.visa {
-	background-image: url(../assets/visa.svg);
+	background-image: url(../img/visa.svg);
 }
 .service-icon.aviation {
-	background-image: url(../assets/aviation.png);
+	background-image: url(../img/laptop.svg);
 }
 .service-icon.umbrella {
-	background-image: url(../assets/beach-umbrella.png);
+	background-image: url(../img/beach-umbrella.svg);
 }
 .service-icon.ticket {
-	background-image: url(../assets/ticket.svg);
+	background-image: url(../img/ticket.svg);
 }
 .service-icon.tourist {
-	background-image: url(../assets/tourist.png);
+	background-image: url(../img/tourist.svg);
 }
 .service-icon.reservation {
-	background-image: url(../assets/reservation.png);
+	background-image: url(../img/reservation.svg);
 }
 .service .service-title {
 	width: 100%;
