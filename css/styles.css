@@ -24,7 +24,7 @@ li {
     transition: background-color .3s;
 }
 .main-header.opaque {
-	background-color: rgb(31, 78, 121);
+    background-color: rgb(31, 78, 121);
 }
 .main-header .page-title {
     display: block;
@@ -80,30 +80,30 @@ li {
     padding-top: 20px;
 }
 .main-menu ul {
-	clear: both;
+    clear: both;
 }
 .main-menu .widgets {
-	float: right;
-	color: #fff;
-	padding: 0 20px;
+    float: right;
+    color: #fff;
+    padding: 0 20px;
 }
 .main-menu .widget {
-	float: left;
-	line-height: 30px;
-	background-repeat: no-repeat;
-	background-position: left center;
+    float: left;
+    line-height: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 .main-menu .widget:not(:last-child) {
-	margin-right: 20px;
+    margin-right: 20px;
 }
 .widget.clock {
-	padding-left: 30px;
-	background-image: url(../img/clock-icon.png);
+    padding-left: 30px;
+    background-image: url(../img/clock-icon.png);
 }
 .widget.temperature {
-	padding-left: 50px;
-	background-image: url(../img/weather.png);
-	background-size: 50px auto;
+    padding-left: 50px;
+    background-image: url(../img/weather.png);
+    background-size: 50px auto;
 }
 .main-menu li,
 .main-menu a {
@@ -123,114 +123,139 @@ video {
     width: 100%;
 }
 .main-section .title {
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 60px;
-	text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
 }
 .main-section .main-title {
-	font-size: 36px;
-	padding: 20px 0;
-	background-color: rgb(31, 78, 121);
-	color: #fff;
+    font-size: 36px;
+    padding: 20px 0;
+    background-color: rgb(31, 78, 121);
+    color: #fff;
 }
 .main-title span {
-	display: block;
-	line-height: 1em;
+    display: block;
+    line-height: 1em;
 }
 .main-title span:last-child {
-	font-size: 18px;
-	line-height: 24px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .slider {
-	height: 500px;
-	background-color: #ccc;
-	background-image: url(../img/kampala-city.jpg);
-	background-size: cover;
+    display: table;
+    height: 500px;
+    width: 100%;
+    background-color: #ccc;
+    background-image: url(../img/kampala-city.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    perspective: 1px;
+}
+.slider .slide {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    transition: background-color .3s;
+}
+.slider .slide:hover {
+    background-color: rgba(0, 0, 0, .3);
+    background-image: radial-gradient(rgba(0, 0, 0, .3) 15%, transparent 20%);
+    background-size: 3px 3px;
+}
+.slide h2 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
 }
 .why-book {
-	background-color: #f00;
-	color: #fff;
-	text-transform: uppercase;
+    background-color: #f00;
+    color: #fff;
+    text-transform: uppercase;
 }
 .services {
-	padding-bottom: 20px;
-	background: linear-gradient(to top, #00f 20%, transparent);
+    padding-bottom: 20px;
+    background: linear-gradient(to top, #00f 20%, transparent);
 }
 .service {
-	cursor: pointer;
+    cursor: pointer;
 }
 .service .service-icon {
-	width: 150px;
-	height: 150px;
-	margin: 20px auto;
-	border: 1px solid #333;
-	border-radius: 50%;
-	background-size: cover;
-	background-position: center;
-	background-size: 100%;
-	transition: background-size .3s;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    transition: background-size .3s;
 }
 .service .service-icon:hover {
-	background-size: 120%;
+    background-size: 120%;
 }
 .service-icon.visa {
-	background-image: url(../img/visa.svg);
+    background-image: url(../img/visa.svg);
 }
 .service-icon.aviation {
-	background-image: url(../img/laptop.svg);
+    background-image: url(../img/laptop.svg);
 }
 .service-icon.umbrella {
-	background-image: url(../img/beach-umbrella.svg);
+    background-image: url(../img/beach-umbrella.svg);
 }
 .service-icon.ticket {
-	background-image: url(../img/ticket.svg);
+    background-image: url(../img/ticket.svg);
 }
 .service-icon.tourist {
-	background-image: url(../img/tourist.svg);
+    background-image: url(../img/tourist.svg);
 }
 .service-icon.reservation {
-	background-image: url(../img/reservation.svg);
+    background-image: url(../img/reservation.svg);
 }
 .service .service-title {
-	width: 100%;
-	background-color: #00f;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	width: 150px;
-	padding: 10px;
-	border: 1px solid #fff;
-	margin: 0 auto;
+    width: 100%;
+    background-color: #00f;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 0 auto;
 }
 .partners {
-	padding: 20px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .partners > a {
-	opacity: .7;
-	transition: opacity .3s;
+    opacity: .7;
+    transition: opacity .3s;
 }
 .partners > a:hover {
-	opacity: 1;
+    opacity: 1;
 }
 .partners img {
-	height: 100px;
-	margin: 10px;
+    height: 100px;
+    margin: 10px;
 }
 .travel-quote {
-	font-size: 20px;
-	background-color: #00f;
-	color: #fff;
-	line-height: 40px;
-	text-align: center;
-	text-transform: uppercase;
+    font-size: 20px;
+    background-color: #00f;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
 .main-footer {
-	line-height: 50px;
-	text-align: center;
-	background-color: #000;
-	color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
 }
