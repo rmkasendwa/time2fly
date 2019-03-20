@@ -197,6 +197,23 @@ video {
 	border: 1px solid #fff;
 	margin: 0 auto;
 }
+.partners {
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.partners > a {
+	opacity: .7;
+	transition: opacity .3s;
+}
+.partners > a:hover {
+	opacity: 1;
+}
+.partners img {
+	height: 100px;
+	margin: 10px;
+}
 .travel-quote {
 	font-size: 20px;
 	background-color: #00f;
