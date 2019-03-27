@@ -264,6 +264,47 @@ video {
     background-color: #000;
     color: #fff;
 }
+.map iframe {
+	width: 100%;
+	display: block;
+}
+.social-media {
+	box-shadow: 0 3px 5px rgba(255,255,255,.5) inset;
+	height: 80px;
+	background-color: #00f;
+	width: 100%;
+	margin: auto;
+	box-shadow: none;
+}
+.social-media a {
+	width: 20%;
+	line-height: 80px;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-decoration: none;
+	float: left;
+	display: block;
+	text-align: center;
+}
+.social-media a:hover {
+	background-color: rgba(255,255,255,.1);
+}
+.social-media .whatsapp {
+	background-image: url("../img/whatsapp.png");
+}
+.social-media .facebook {
+	background-image: url("../img/facebook.png");
+}
+.social-media .twitter {
+	background-image: url("../img/twitter.png");
+}
+.social-media .linkedin {
+	background-image: url("../img/linkedin.png");
+}
+.social-media .instagram {
+	background-image: url("../img/instagram.png");
+}
 @media screen and (max-width: 768px) {
 	.main-menu ul {
 		display: none;
