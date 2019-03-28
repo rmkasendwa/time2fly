@@ -5,13 +5,15 @@ $(function() {
 		videoElement = $('video').on('contextmenu', function() {
 			return false;
 		})[0];
-	$(window).on('scroll', function() {
-		if (this.scrollY + mainHeader[0].offsetHeight >= videoElement.offsetHeight) {
-			mainHeader.addClass('opaque');
-		} else {
-			mainHeader.removeClass('opaque');
-		}
-	}).trigger('scroll');
+	if (videoElement) {
+		$(window).on('scroll', function() {
+			if (this.scrollY + mainHeader[0].offsetHeight >= videoElement.offsetHeight) {
+				mainHeader.addClass('opaque');
+			} else {
+				mainHeader.removeClass('opaque');
+			}
+		}).trigger('scroll');
+	}
 	var displayTime;
 	setInterval(function() {
 		var currentDateTime = new Date();
