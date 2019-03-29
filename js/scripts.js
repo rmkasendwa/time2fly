@@ -14,6 +14,9 @@ $(function() {
 			}
 		}).trigger('scroll');
 	}
+	$('.menu-toggle').on('click', function() {
+		$('body').toggleClass('menu-expanded');
+	});
 	var displayTime;
 	setInterval(function() {
 		var currentDateTime = new Date();
