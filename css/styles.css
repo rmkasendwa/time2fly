@@ -336,7 +336,7 @@ video {
 .service-section .service-details {
     margin: 0 auto;
     padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 .service-disclaimer {
     background-color: #4F81BD;
@@ -400,7 +400,7 @@ video {
         font-size: 16px;
     }
     .page-title .tag-line {
-        font-size: 10px;
+        font-size: 8px;
     }
     .main-header .page-title .logo {
         width: 40px;
