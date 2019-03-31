@@ -35,12 +35,12 @@
 }
 .contacts li {
     position: relative;
-    padding: 20px 60px 20px 0;
+    padding: 10px 60px 10px 0;
     line-height: 30px;
 }
 .contacts li span {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 20px;
     color: #00f;
     width: 30px;
