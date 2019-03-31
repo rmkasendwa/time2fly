@@ -6,39 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Time2Fly</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png">
-    <script src="js/date.min.js"></script>
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
-<body>
-    <header class="main-header opaque clearfix">
-        <a class="page-title" href="#">
-            <div class="logo"></div>
-            <h1 class="clearfix">
-                <div class="title">
-                    <span>Time</span><span>2</span><span>Fly</span>
-                </div>
-                <div class="tag-line">Tours &amp; Travel Ltd</div>
-            </h1>
-        </a>
-        <nav class="main-menu">
-            <div class="widgets">
-                <div class="widget clock"></div>
-                <div class="widget temperature">24&#8451;</div>
-            </div>
-            <ul class="clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li class="selected"><a href="#services">Services</a></li>
-                <li><a href="#">Trips</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<body style="display: none;">
+    <fragment-include>site-css.html</fragment-include>
+    <fragment-include>site-js-libs.html</fragment-include>
+    <fragment-include>main-header.html</fragment-include>
     <section class="main-section service-section">
         <h1 class="title main-title">Reservations, Local, Regional And International</h1>
         <div class="service-details">
@@ -66,16 +42,7 @@
             <p>Guaranteed hotel check-in.</p>
         </div>
     </section>
-    <div class="social-media">
-        <a href="intent://0783084521#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="whatsapp">Whatsapp</a>
-        <a href="https://web.facebook.com/Time2Fly5/" target="_blank" class="facebook">Facebook</a>
-        <a href="https://twitter.com/Time2Fly5" target="_blank" class="twitter">Twitter</a>
-        <a href="https://www.linkedin.com/company/time2fly/" target="_blank" class="linkedin">Linkedin</a>
-        <a href="https://www.instagram.com/time2fly_ug/" target="_blank" class="instagram">Instagram</a>
-    </div>
-    <footer class="main-footer">
-        Copyright &copy; 2019 Time2Fly Ltd. All Rights Reserved.
-    </footer>
+    <fragment-include>main-footer.html</fragment-include>
 </body>
 
 </html>
