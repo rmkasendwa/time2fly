@@ -79,6 +79,15 @@
     background-color: rgba(255, 255, 255, .3);
     cursor: pointer;
 }
+.main-menu .nav > li > a:hover,
+.main-menu .nav > li > a:focus {
+    background-color: rgba(255, 0, 0, .3);
+}
+.main-menu .nav-pills > li.active > a,
+.main-menu .nav-pills > li.active > a:hover,
+.main-menu .nav-pills > li.active > a:focus {
+    background-color: #f00;
+}
 .main-menu ul {
     clear: both;
 }
@@ -131,7 +140,7 @@
     .main-menu ul {
         position: fixed;
         height: 100%;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0, 0, 0, .8);
         top: 80px;
         right: -150px;
         width: 150px;

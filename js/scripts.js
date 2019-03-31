@@ -38,7 +38,7 @@ $(function() {
 					setTimeout(updateWeather, 1000 * 60);
 				}
 				updateWeather();
-				$('body').removeAttr('style');
+				$('body').removeAttr('style').scrollspy({ target: '#main-menu' })
 			}
 		};
 	fragmentIncludes.each(function() {
