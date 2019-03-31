@@ -8,8 +8,8 @@
     margin: 16px 0;
 }
 .footer-band .about-section {
-    padding: 0 20px;
-    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 576px;
 }
 .about-section h1 {
     font-size: 20px;
@@ -53,13 +53,17 @@
     background-color: #000;
     width: 100%;
 }
-
+.social-media h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
 .social-media .social-media-links {
     width: 240px;
     margin: 0 auto;
     padding: 10px 0;
 }
-
 .social-media-links a {
     float: left;
     width: 40px;
@@ -83,4 +87,20 @@
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+@media screen and (max-width: 1056px) {
+    .main-footer .footer-band {
+        height: auto;
+        background-image: none;
+    }
+    .footer-band .about-section {
+        padding: 0 20px;
+        border-bottom: 40px solid #f00;
+    }
+    .footer-band .contacts {
+        margin-top: 16px;
+        border-top: 40px solid #00f;
+        position: relative;
+        max-width: none;
+    }
 }
