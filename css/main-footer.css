@@ -1,0 +1,36 @@
+.main-footer .footer-band {
+    height: 400px;
+    background-image: url("../img/footer-band.svg");
+    background-repeat: no-repeat;
+    background-size: auto 400px;
+    background-position: top right;
+    margin: 16px 0;
+}
+.social-media {
+    background-color: #000;
+    width: 100%;
+}
+
+.social-media .social-media-links {
+    width: 240px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.social-media-links a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+}
+.social-media-links a:not(:last-child) {
+    margin-right: 10px;
+}
+.social-media a:hover {
+    background-color: #ccc;
+    text-decoration: none;
+}

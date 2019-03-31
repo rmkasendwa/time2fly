@@ -12,126 +12,6 @@ h1 {
 li {
     list-style-type: none;
 }
-.main-header {
-    background: linear-gradient(rgba(31, 78, 121, .5), transparent);
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    padding: 0 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    transition: background-color .3s;
-}
-.main-header.opaque {
-    background-color: rgb(31, 78, 121);
-}
-.main-header .page-title {
-    display: block;
-    text-transform: uppercase;
-    height: 80px;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 1;
-    font-family: "Arial Black", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    float: left;
-}
-.main-header .page-title .logo,
-.main-header .page-title h1 {
-    float: left;
-}
-.main-header .page-title .logo {
-    width: 80px;
-    height: 80px;
-    background-image: url(../img/logo.svg);
-    background-size: 100%;
-    background-position: bottom 5px center;
-    background-repeat: no-repeat;
-}
-.main-header .page-title h1 {
-    width: 244px;
-    padding: 11px 0;
-}
-.page-title .title {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-}
-.page-title .title span:first-child {
-    color: #00f;
-}
-.page-title .title span:nth-child(2) {
-    color: #ccc;
-}
-.page-title .title span:last-child {
-    color: #f00;
-}
-.page-title .tag-line {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
-    color: #fff;
-}
-.main-menu,
-.main-menu .widgets {
-    float: right;
-}
-.main-menu {
-    padding-top: 20px;
-}
-.main-menu .menu-toggle {
-    width: 30px;
-    height: 30px;
-    line-height: 28px;
-    text-align: center;
-    color: #fff;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    display: none;
-}
-.main-menu .menu-toggle:hover {
-    background-color: rgba(255, 255, 255, .3);
-    cursor: pointer;
-}
-.main-menu ul {
-    clear: both;
-}
-.main-menu .widgets {
-    float: right;
-    color: #fff;
-    padding: 0 20px;
-}
-.main-menu .widget {
-    float: left;
-    line-height: 30px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-.main-menu .widget:not(:last-child) {
-    margin-right: 20px;
-}
-.widget.clock {
-    padding-left: 30px;
-    background-image: url(../img/clock-icon.png);
-}
-.widget.temperature {
-    padding-left: 50px;
-    background-image: url(../img/weather.png);
-    background-size: 50px auto;
-}
-.main-menu li,
-.main-menu a {
-    float: left;
-}
-.main-menu li a {
-    padding: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    line-height: 30px;
-}
-.main-menu li.selected a {
-    border-bottom: 2px solid #f00;
-}
 video {
     display: block;
     width: 100%;
@@ -186,61 +66,6 @@ video {
     margin: 0;
     font-weight: bold;
 }
-.why-book {
-    background-color: #f00;
-    color: #fff;
-    text-transform: uppercase;
-}
-.services {
-    padding-bottom: 20px;
-    background: linear-gradient(to top, #00f 20%, transparent);
-}
-.service {
-    cursor: pointer;
-}
-.service .service-icon {
-    width: 150px;
-    height: 150px;
-    margin: 20px auto;
-    border: 1px solid #333;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    background-size: 100%;
-    transition: background-size .3s;
-}
-.service .service-icon:hover {
-    background-size: 120%;
-}
-.service-icon.visa {
-    background-image: url(../img/visa.svg);
-}
-.service-icon.aviation {
-    background-image: url(../img/laptop.svg);
-}
-.service-icon.umbrella {
-    background-image: url(../img/beach-umbrella.svg);
-}
-.service-icon.ticket {
-    background-image: url(../img/ticket.svg);
-}
-.service-icon.tourist {
-    background-image: url(../img/tourist.svg);
-}
-.service-icon.reservation {
-    background-image: url(../img/reservation.svg);
-}
-.service .service-title {
-    width: 100%;
-    background-color: #00f;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    width: 150px;
-    padding: 10px;
-    border: 1px solid #fff;
-    margin: 0 auto;
-}
 .partners {
     padding: 20px 0;
     display: flex;
@@ -263,88 +88,9 @@ video {
 .partners img {
     height: 50px;
 }
-.travel-quote {
-    font-size: 20px;
-    background-color: #00f;
-    color: #fff;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.main-footer {
-    line-height: 50px;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-}
 .map iframe {
     width: 100%;
     display: block;
-}
-.social-media {
-    box-shadow: 0 3px 5px rgba(255, 255, 255, .5) inset;
-    height: 80px;
-    background-color: #00f;
-    width: 100%;
-    margin: auto;
-    box-shadow: none;
-}
-.social-media a {
-    width: 20%;
-    line-height: 80px;
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
-    float: left;
-    display: block;
-    text-align: center;
-}
-.social-media a:hover {
-    background-color: rgba(255, 255, 255, .1);
-}
-.social-media .whatsapp {
-    background-image: url("../img/whatsapp.png");
-}
-.social-media .facebook {
-    background-image: url("../img/facebook.png");
-}
-.social-media .twitter {
-    background-image: url("../img/twitter.png");
-}
-.social-media .linkedin {
-    background-image: url("../img/linkedin.png");
-}
-.social-media .instagram {
-    background-image: url("../img/instagram.png");
-}
-.service-section {
-    padding-top: 82px;
-}
-.service-section .main-title {
-    background-color: #000;
-    text-align: left;
-    display: inline-block;
-    padding: 0 20px;
-    line-height: 50px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 1px #fff, 3px 3px 1px #000;
-}
-.service-section .service-details {
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 20px;
-}
-.service-disclaimer {
-    background-color: #4F81BD;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 20px;
-    color: #fff;
-    box-shadow: 2px 2px 1px #fff, 4px 4px 1px #000;
 }
 @media screen and (max-width: 768px) {
     .menu-expanded {
@@ -462,6 +208,11 @@ video {
     .partners {
         padding-right: 20px;
         padding-left: 20px;
+    }
+    .partners a {
+        width: 50%;
+        margin: 0;
+        padding: 5px;
     }
     .partners img {
         width: 100%;

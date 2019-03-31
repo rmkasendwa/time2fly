@@ -1,0 +1,120 @@
+.main-header {
+    background: linear-gradient(rgba(31, 78, 121, .5), transparent);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: background-color .3s;
+}
+.main-header.opaque {
+    background-color: rgb(31, 78, 121);
+}
+.main-header .page-title {
+    display: block;
+    text-transform: uppercase;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 1;
+    font-family: "Arial Black", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    float: left;
+}
+.main-header .page-title .logo,
+.main-header .page-title h1 {
+    float: left;
+}
+.main-header .page-title .logo {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/logo.svg);
+    background-size: 100%;
+    background-position: bottom 5px center;
+    background-repeat: no-repeat;
+}
+.main-header .page-title h1 {
+    width: 244px;
+    padding: 11px 0;
+}
+.page-title .title {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+.page-title .title span:first-child {
+    color: #00f;
+}
+.page-title .title span:nth-child(2) {
+    color: #ccc;
+}
+.page-title .title span:last-child {
+    color: #f00;
+}
+.page-title .tag-line {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #fff;
+}
+.main-menu,
+.main-menu .widgets {
+    float: right;
+}
+.main-menu {
+    padding-top: 20px;
+}
+.main-menu .menu-toggle {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: none;
+}
+.main-menu .menu-toggle:hover {
+    background-color: rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+.main-menu ul {
+    clear: both;
+}
+.main-menu .widgets {
+    float: right;
+    color: #fff;
+    padding: 0 20px;
+}
+.main-menu .widget {
+    float: left;
+    line-height: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.main-menu .widget:not(:last-child) {
+    margin-right: 20px;
+}
+.widget.clock {
+    padding-left: 30px;
+    background-image: url(../img/clock-icon.png);
+}
+.widget.temperature {
+    padding-left: 50px;
+    background-image: url(../img/weather.png);
+    background-size: 50px auto;
+}
+.main-menu li,
+.main-menu a {
+    float: left;
+}
+.main-menu li a {
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+.main-menu li.selected a {
+    border-bottom: 2px solid #f00;
+}

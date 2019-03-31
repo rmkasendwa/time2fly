@@ -6,125 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Time2Fly</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.png">
-    <script src="js/date.min.js"></script>
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
-<body>
-    <header class="main-header clearfix">
-        <a class="page-title clearfix" href="#">
-            <div class="logo"></div>
-            <h1 class="clearfix">
-            	<div class="title">
-            		<span>Time</span><span>2</span><span>Fly</span>
-            	</div>
-            	<div class="tag-line">Tours &amp; Travel Ltd</div>
-            </h1>
-        </a>
-        <nav class="main-menu clearfix">
-            <div class="widgets clearfix">
-                <div class="widget clock"></div>
-                <div class="widget temperature">24&#8451;</div>
-            </div>
-            <div class="menu-toggle glyphicon glyphicon-menu-hamburger"></div>
-            <ul class="clearfix">
-                <li class="selected"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">Trips</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<body style="display: none;">
+    <fragment-include>site-css.html</fragment-include>
+    <fragment-include>site-js-libs.html</fragment-include>
+    <fragment-include>main-header.html</fragment-include>
     <section class="main-section">
         <video src="vidz/video.mp4" autoplay loop muted></video>
         <h1 class="title main-title">
-        	<span>Welcome To Time2Fly</span>
-        	<span>Tours And Travel</span>
+            <span>Welcome To Time2Fly</span>
+            <span>Tours And Travel</span>
         </h1>
-        <div class="slider">
-            <!-- <div class="slide">
-                <h2>Times 2 Fly</h2>
-                <p>Tours &amp; Travel Limited</p>
-            </div> -->
-        </div>
-        <h1 id="services" class="title why-book">Why Book With Us</h1>
-        <div class="services clearfix">
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="visa.html" class="service">
-                    <div class="service-icon visa"></div>
-                    <div class="service-title">Visa Advice And Assistance Service</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="computerized-airline.html" class="service">
-                    <div class="service-icon aviation"></div>
-                    <div class="service-title">Computerized Airline, Hotel &amp; Car Hire</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="tours.html" class="service">
-                    <div class="service-icon umbrella"></div>
-                    <div class="service-title">Holiday
-                        <br>Tours &amp; Travel Packages</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="air-ticketing.html" class="service">
-                    <div class="service-icon ticket"></div>
-                    <div class="service-title">Local &amp; International Air Ticketing</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="educational-tours.html" class="service">
-                    <div class="service-icon tourist"></div>
-                    <div class="service-title">Educational Tours &amp; Travel Packages</div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-xs-6">
-                <a href="reservations.html" class="service">
-                    <div class="service-icon reservation"></div>
-                    <div class="service-title">Local, Regional &amp; International Reservations</div>
-                </a>
-            </div>
-        </div>
-        <div class="travel-quote">Explore the world, traveling is knowledge</div>
-        <h1 class="title why-book">Some Of Our Major Airline Partners</h1>
-        <div class="partners">
-            <a href="https://www.kenya-airways.com" target="_blank"><img src="assets/kenya-airways.svg" alt="Kenya Airways"></a>
-            <a href="https://www.flydubai.com" target="_blank"><img src="assets/flydubai.jpg" alt="Fly Dubai"></a>
-            <a href="https://www.qatarairways.com" target="_blank"><img src="assets/qatar-airways.png" alt="Qatar Air"></a>
-            <a href="https://www.rwandair.com" target="_blank"><img src="assets/rwandair.png" alt="Rwanda Air"></a>
-            <a href="https://www.airfrance.com" target="_blank"><img src="assets/air-france.png" alt="Air France"></a>
-            <a href="https://www.turkishairlines.com" target="_blank"><img src="assets/turkish-airlines.png" alt="Turkish Airways"></a>
-            <a href="http://www.jambojet.com" target="_blank"><img src="assets/jambo-jet.png" alt="Jambo Jet"></a>
-            <a href="https://www.etihad.com" target="_blank"><img src="assets/etihad.svg" alt="Etihad Airways"></a>
-            <a href="https://www.ethiopianairlines.com" target="_blank"><img src="assets/ethiopian-airways.png" alt="Ethiopian Airways"></a>
-            <a href="https://www.brusselsairlines.com" target="_blank"><img src="assets/brussels-airlines.jpg" alt="Brussels Air"></a>
-            <a href="https://www.flysaa.com" target="_blank"><img src="assets/south-african-airways.png" alt="South African Airways"></a>
-            <a href="https://www.klm.com" target="_blank"><img src="assets/klm.svg" alt="KLM"></a>
-            <a href="https://www.emirates.com" target="_blank"><img src="assets/emirates.png" alt="Emirates"></a>
-            <a href="https://www.egyptair.com" target="_blank"><img src="assets/egyptair.svg" alt="Egypt Air"></a>
-        </div>
-        <h1 class="title why-book">Our Location</h1>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027.3108185248734!2d32.58198236409208!3d0.31421215242679246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc8078b3dcdd%3A0x43e8879e70d9dffe!2sNIC+Building%2C+Kampala!5e1!3m2!1sen!2sug!4v1494764671052" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        <div class="slider"></div>
+        <fragment-include>services-section.html</fragment-include>
+        <fragment-include>major-partners.html</fragment-include>
+        <fragment-include>location-map.html</fragment-include>
     </section>
-    <div class="social-media">
-        <a href="intent://0783084521#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="whatsapp">Whatsapp</a>
-        <a href="https://web.facebook.com/Time2Fly5/" target="_blank" class="facebook">Facebook</a>
-        <a href="https://twitter.com/Time2Fly5" target="_blank" class="twitter">Twitter</a>
-        <a href="https://www.linkedin.com/company/time2fly/" target="_blank" class="linkedin">Linkedin</a>
-        <a href="https://www.instagram.com/time2fly_ug/" target="_blank" class="instagram">Instagram</a>
-    </div>
-    <footer class="main-footer">
-        Copyright &copy; 2019 Time2Fly Ltd. All Rights Reserved.
-    </footer>
+    <fragment-include>main-footer.html</fragment-include>
 </body>
 
 </html>
