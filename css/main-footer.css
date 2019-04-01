@@ -4,7 +4,7 @@
     background-image: url("../img/footer-band.svg");
     background-repeat: no-repeat;
     background-size: auto 400px;
-    background-position: top right -92px;
+    background-position: bottom right -92px;
     margin: 16px 0;
 }
 .footer-band .about-section {
@@ -89,16 +89,37 @@
 @media screen and (max-width: 1000px) {
     .main-footer .footer-band {
         height: auto;
-        background-image: none;
+        padding-bottom: 81px;
+        background-size: auto 200px;
     }
     .footer-band .about-section {
         padding: 0 20px;
-        border-bottom: 40px solid #f00;
     }
     .footer-band .contacts {
         margin-top: 16px;
-        border-top: 40px solid #00f;
         position: relative;
         max-width: none;
+        text-align: left;
+        padding-right: 224px;
+    }
+    .contacts li {
+        padding: 10px 0 10px 60px;
+    }
+    .contacts li span {
+        left: 20px;
+        right: auto;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .main-footer .footer-band {
+        height: auto;
+        padding-bottom: 81px;
+        background-size: auto 200px;
+        background-position: bottom right -249px;
+    }
+    .footer-band .contacts {
+        padding-right: 0;
     }
 }
