@@ -1,0 +1,26 @@
+.trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trip {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #000;
+    background-image: url(../img/gorilla.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.trip .trip-title {
+    position: absolute;
+    bottom: 0;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
