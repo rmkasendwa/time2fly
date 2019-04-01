@@ -84,3 +84,7 @@
     text-align: center;
     text-transform: uppercase;
 }
+.vision-section header h1,
+.mission-section header h1 {
+    margin-left: 0;
+}
