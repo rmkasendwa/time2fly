@@ -38,7 +38,20 @@ $(function() {
 					setTimeout(updateWeather, 1000 * 60);
 				}
 				updateWeather();
-				$('body').removeAttr('style').scrollspy({ target: '#main-menu' })
+				$('body').removeAttr('style').scrollspy({
+					target: '#main-menu',
+					offset: 100
+				});
+				$('.nav-link').on('click', function(e) {
+					e.preventDefault();
+					var offset = 80;
+					var target = this.hash;
+					$('html, body').stop().animate({
+						'scrollTop': $(target).offset().top - offset
+					}, 500, 'swing', function() {
+						// window.location.hash = target;
+					});
+				});
 			}
 		};
 	fragmentIncludes.each(function() {
