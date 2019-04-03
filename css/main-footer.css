@@ -123,10 +123,45 @@
     .main-footer .footer-band {
         height: auto;
         padding-bottom: 81px;
-        background-size: auto 200px;
-        background-position: bottom right -249px;
+        background-size: auto 250px;
+        background-position: bottom right;
     }
     .footer-band .contacts {
         padding-right: 0;
+        padding-bottom: 190px;
+    }
+    .footer-band .contacts h1 {
+        position: absolute;
+        margin: 0;
+        right: 10px;
+        top: 24px;
+        background-color: #fff;
+        color: #f00;
+        line-height: 12px;
+    }
+    .footer-band .contacts ul {
+        position: absolute;
+        top: 114px;
+        right: 0;
+        text-align: right;
+        max-width: 339px;
+    }
+    .footer-band .contacts li {
+        position: relative;
+        padding: 5px 35px 5px 0;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .footer-band .contacts li span {
+        position: absolute;
+        top: -2px;
+        left: auto;
+        right: 9px;
+        color: #00f;
+        width: 20px;
+        height: 20px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 0;
     }
 }
