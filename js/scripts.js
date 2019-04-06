@@ -4,13 +4,13 @@ $(function() {
 		fragmentLoadedCallback = function() {
 			fragmentsToLoad--;
 			if (fragmentsToLoad === 0) {
-				var mainHeader = $('.main-header'),
+				var mainHeader = $('.main-header:not(.services-header)'),
 					clockTime = $('.widget.clock'),
 					temperature = $('.widget.temperature'),
 					videoElement = $('video').on('contextmenu', function() {
 						return false;
 					})[0];
-				if (videoElement) {
+				if (videoElement && mainHeader.length > 0) {
 					$(window).on('scroll', function() {
 						if (this.scrollY + mainHeader[0].offsetHeight >= videoElement.offsetHeight) {
 							mainHeader.addClass('opaque');
@@ -61,6 +61,9 @@ $(function() {
 			url: 'partials/' + fragmentBaseName,
 			type: "GET",
 			success: function(fragment) {
+				if (fragmentPlaceholder.attr('class') !== undefined) {
+					fragment = $(fragment).addClass(fragmentPlaceholder.attr('class'));
+				}
 				switch (fragmentBaseName) {
 					case "site-css.html":
 					case "site-js-libs.html":

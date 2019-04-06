@@ -1,9 +1,16 @@
 .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 20px;
     background: linear-gradient(to top, #00f 20%, transparent);
 }
 .service {
-    cursor: pointer;
+    display: block;
+    width: 150px;
+}
+.service:not(:last-child) {
+    margin-right: 20px;
 }
 .service .service-icon {
     width: 150px;
