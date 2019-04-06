@@ -122,9 +122,9 @@
 @media screen and (max-width: 848px) {
     .main-footer .footer-band {
         height: auto;
-        padding-bottom: 81px;
+        padding-bottom: 40px;
         background-size: auto 250px;
-        background-position: bottom right;
+        background-position: bottom right -86px;
     }
     .footer-band .contacts {
         max-width: none;
@@ -135,14 +135,15 @@
         position: absolute;
         margin: 0;
         right: 10px;
-        top: 24px;
+        top: -17px;
         background-color: #fff;
         color: #f00;
         line-height: 12px;
+        font-size: 18px;
     }
     .footer-band .contacts ul {
         position: absolute;
-        top: 114px;
+        top: 70px;
         right: 0;
         text-align: right;
         max-width: 339px;
@@ -150,7 +151,7 @@
     .footer-band .contacts li {
         position: relative;
         padding: 5px 35px 5px 0;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 19px;
     }
     .footer-band .contacts li span {
