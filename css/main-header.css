@@ -167,7 +167,7 @@
         display: block;
     }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 660px) {
     .main-header {
         padding-left: 10px;
         padding-right: 10px;
