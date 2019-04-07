@@ -1,0 +1,107 @@
+.slider {
+    display: block;
+    height: 720px;
+    width: 100%;
+    position: relative;
+}
+.slider .slides,
+.slides .slide,
+.slider-controls .slide-links,
+.slider .slider-caption,
+.slider-controls .prev,
+.slider-controls .next {
+    position: absolute;
+}
+.slider .slides,
+.slides .slide {
+    width: 100%;
+    height: 100%;
+}
+.slides .slide {
+    background-color: #ccc;
+    background-image: url(../img/kampala-city.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slider .slider-caption {
+    width: 360px;
+    height: 424px;
+    top: 148px;
+    left: 90px;
+    padding: 40px;
+    border: 1px solid #666;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(5px);
+    color: #666;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, .7);
+}
+.slider-caption h2,
+.slider-caption .read-more-link {
+    text-transform: uppercase;
+}
+.slider-caption p {
+    line-height: 24px;
+}
+.slider-caption .read-more-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.slider-controls .prev,
+.slider-controls .next {
+    width: 44px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 50px;
+    top: 340px;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.slider-controls .prev:hover,
+.slider-controls .prev:active,
+.slider-controls .next:hover,
+.slider-controls .next:active {
+    opacity: .8;
+}
+.slider-controls .prev {
+    left: 44px;
+}
+.slider-controls .next {
+    right: 44px;
+}
+.slider-controls .slide-links {
+    bottom: 20px;
+    left: 50%;
+    margin-left: -25px;
+}
+.slide-links .slide-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid #666;
+    float: left;
+    cursor: pointer;
+}
+.slide-links .slide-link.active {
+    background-color: #f00;
+    border: none;
+}
+.slide-links .slide-link:not(:last-child) {
+    margin-right: 10px;
+}
+@media screen and (max-width: 700px) {
+    .slider .slider-caption {
+        display: none;
+    }
+    .slider-controls .prev {
+        left: 22px;
+    }
+    .slider-controls .next {
+        right: 22px;
+    }
+}

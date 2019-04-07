@@ -95,3 +95,20 @@
 .mission-section header h1 {
     margin-left: 0;
 }
+.service-image {
+    position: relative;
+}
+.service-image,
+.service-image img {
+    width: 100%;
+}
+.service-image .caption {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+}

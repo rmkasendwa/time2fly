@@ -41,7 +41,7 @@
 }
 .contacts li span {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 20px;
     color: #00f;
     width: 30px;
@@ -72,16 +72,33 @@
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    background-color: #fff;
-    color: #000;
+    color: #fff;
 }
 .social-media-links a:not(:last-child) {
     margin-right: 10px;
 }
 .social-media a:hover,
 .social-media a:active {
-    background-color: #ccc;
+    opacity: .8;
     text-decoration: none;
+}
+.social-media-links .whatsapp {
+    background: rgb(44, 183, 66);
+}
+.social-media-links .facebook {
+    background: rgb(59, 89, 152);
+}
+.social-media-links .twitter {
+    background: rgb(0, 172, 237);
+}
+.social-media-links .linkedin {
+    background: rgb(0, 119, 181);
+}
+.social-media-links .instagram {
+    background: rgb(153, 61, 172);
+}
+.social-media-links .tripadvisor {
+    background: rgb(90, 149, 67);
 }
 .copyright-info {
     background-color: #000;
@@ -124,7 +141,7 @@
         height: auto;
         padding-bottom: 40px;
         background-size: auto 250px;
-        background-position: bottom right -86px;
+        background-position: bottom right -100px;
     }
     .footer-band .contacts {
         max-width: none;
@@ -139,7 +156,7 @@
         background-color: #fff;
         color: #f00;
         line-height: 12px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-band .contacts ul {
         position: absolute;
@@ -151,7 +168,7 @@
     .footer-band .contacts li {
         position: relative;
         padding: 5px 35px 5px 0;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 19px;
     }
     .footer-band .contacts li span {
@@ -165,5 +182,16 @@
         line-height: 30px;
         text-align: center;
         margin-right: 0;
+    }
+    .footer-band .logo {
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position: absolute;
+        bottom: 138px;
+        left: 13px;
     }
 }

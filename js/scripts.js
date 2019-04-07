@@ -22,6 +22,29 @@ $(function() {
 				$('.menu-toggle').on('click', function() {
 					$('body').toggleClass('menu-expanded');
 				});
+				if ($.fn.slider) {
+					$('.slider').slider({
+						slides: [{
+							image: "kampala-city.jpg",
+							caption: {
+								header: "Kampala City",
+								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
+							}
+						}, {
+							image: "mbale-city.jpg",
+							caption: {
+								header: "Mbale City",
+								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
+							}
+						}, {
+							image: "kigali.jpg",
+							caption: {
+								header: "Kigali City",
+								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
+							}
+						}]
+					});
+				}
 				var displayTime;
 				setInterval(function() {
 					var currentDateTime = new Date();
