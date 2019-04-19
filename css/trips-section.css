@@ -54,3 +54,31 @@
     font-size: 20px;
     line-height: 40px;
 }
+.single-trip {
+    position: relative;
+}
+.single-trip iframe {
+    width: 100% !important;
+    height: 649px !important;
+}
+.single-trip .trip-images {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 20px;
+}
+.trip-images .trip-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(../img/lion.jpg);
+    background-size: cover;
+    border: 2px solid #000;
+    margin-right: -40px;
+}
+.trip-images .trip-image:nth-child(even) {
+    transform: translateY(-40px);
+}

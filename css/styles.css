@@ -26,6 +26,7 @@ video {
     font-size: 36px;
     padding: 20px 0;
     background-color: rgb(31, 78, 121);
+    text-transform: uppercase;
     color: #fff;
 }
 .main-title span {
