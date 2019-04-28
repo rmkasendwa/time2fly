@@ -60,25 +60,127 @@
 .single-trip iframe {
     width: 100% !important;
     height: 649px !important;
+    display: block;
 }
 .single-trip .trip-images {
     width: 100%;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    bottom: 20px;
+}
+.trip-images .major-trip-image,
+.trip-images .minor-trip-images,
+.minor-trip-images .trip-image {
+    width: 50%;
+    float: left;
+}
+.trip-images .major-trip-image,
+.trip-images .minor-trip-images {
+    height: 450px;
+}
+.minor-trip-images .trip-image {
+    height: 150px;
 }
 .trip-images .trip-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: #fff;
-    background-image: url(../img/lion.jpg);
-    background-size: cover;
-    border: 2px solid #000;
-    margin-right: -40px;
+    padding: 2px;
+    overflow: hidden;
 }
-.trip-images .trip-image:nth-child(even) {
-    transform: translateY(-40px);
+.trip-images .trip-image .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: transform .3s;
+}
+.trip-images .trip-image:hover {
+    background-color: #000;
+}
+.trip-images .trip-image:hover .image {
+    transform: scale(1.5) rotate(-10deg);
+    opacity: .4;
+}
+.trip-images .trip-image.lion .image {
+    background-image: url(../img/lion.jpg);
+}
+.trip-images .trip-image.water-falls .image {
+    background-image: url(../img/sipi-falls.jpg);
+}
+.trip-images .trip-image.food .image {
+    background-image: url(../img/kigali.jpg);
+}
+.trip-images .trip-image.gorilla .image {
+    background-image: url(../img/gorilla.jpg);
+}
+.single-trip .trip-header {
+    display: table;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+}
+.trip-header .title {
+    background-color: #f00;
+    line-height: 40px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+.trip-header > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+.trip-header .itenerary-branding,
+.trip-header .book-now-branding {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+}
+.trip-header .itenerary-branding div {
+    text-transform: uppercase;
+    background-color: #FFFE01;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.trip-header .itenerary-branding div:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #FFFE01;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+.trip-header .book-now-branding div {
+    background-color: #00AF50;
+    padding: 10px;
+    color: #FFFE01;
+    border-radius: 10px;
+}
+.single-trip .trip-details {
+    background-color: #012060;
+    color: #fff;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px;
+    width: 100%;
+    display: table;
+}
+.single-trip .trip-details h2 {
+    color: #FFFE01;
+    font-size: 18px;
+}
+.trip-details .itenerary-break-down,
+.trip-details .exclusions {
+    display: table-cell;
+}
+.trip-details .itenerary-break-down h2 {
+    font-style: italic;
+}
+.trip-details .exclusions {
+    border-left: 1px dotted #FFFE01;
+    padding-left: 20px;
+}
+.trip-details .exclusions li {
+    list-style: circle;
 }
