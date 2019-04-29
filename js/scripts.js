@@ -28,19 +28,25 @@ $(function() {
 							image: "kampala-city.jpg",
 							caption: {
 								header: "Kampala City",
-								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
-							}
-						}, {
-							image: "mbale-city.jpg",
-							caption: {
-								header: "Mbale City",
-								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
+								details: "Kampala is the Capital and largest city of Uganda. With over 2.5 million people, the city is built on seven hills and now spreading way beyond.  One thing you will note upon arrival is how green Kampala is but more so how it buzzes with life. Its bustling town is alive, filled with activities from business to cultural, with numerous Hotels that will fit every price range and provide an enjoyable stay while your explore Kampala, it reflects the heart of Africa."
 							}
 						}, {
 							image: "kigali.jpg",
 							caption: {
 								header: "Kigali City",
-								details: "These are usually planned combination of tours, visit sites and hands-on learning opportunities with the targets of global learning which can enhance knowledge of students, holiday makers, and other tourists."
+								details: "Kigali is the capital and largest city of Rwanda. The city has been Rwanda's economic, cultural, and transport hub since it became capital at independence in 1962. Kigali is the cleanest city in Africa. The fact that it is so green and hilly adds to the aesthetic allure of the place. It is not surprising thus that Kigali is considered to be one of the most liveable cities in Africa."
+							}
+						}, {
+							image: "nairobi.jpg",
+							caption: {
+								header: "Nairobi City",
+								details: "Nairobi, popularly known as \"Green City in the Sun\" has over 3.5 million people and an amazing culture, which is unparalleled in any other city. The city is known for its sheer natural beauty that will take your breath away. ... Nairobi is a lively city, full of culture, historically rich, home to beautiful national parks and wildlife."
+							}
+						}, {
+							image: "daressalaam.jpg",
+							caption: {
+								header: "Dar es salaam City",
+								details: "Dar es Salaam is the largest and former capital city of Tanzania with an estimated population of over 5.3 million people it’s an economic capital of Tanzania. Located in a quiet bay off the Indian Ocean coast, the city has developed into an economic importance to become a prosperous centre of the entire East African region. Its bustling harbour is the main port in Tanzania."
 							}
 						}]
 					});
