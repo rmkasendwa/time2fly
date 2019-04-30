@@ -6,20 +6,18 @@
 .trip {
     display: block;
     width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    background-color: #000;
     position: relative;
     margin: 10px;
     overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.3);
 }
 .trip-thumbnail {
-    position: absolute;
+    display: block;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
-    transition: opacity .3s;
+    height: 200px;
 }
 .trip.lion .trip-thumbnail {
     background-image: url(../img/lion.jpg);
@@ -34,21 +32,18 @@
     background-image: url(../img/gorilla.jpg);
 }
 .trip .trip-details {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    text-align: center;
-    color: #fff;
+    padding: 20px;
+    color: #000;
 }
 .trip .trip-details p {
-    height: 0;
     overflow: hidden;
 }
-.trip:hover .trip-thumbnail {
-    opacity: .3;
+.trip:hover, .trip:focus {
+    text-decoration: none;
 }
-.trip:hover .trip-details p {
-    height: auto;
+.trip:hover .trip-details {
+    color: #555;
 }
 .trip .trip-title {
     font-size: 20px;
@@ -86,6 +81,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-position: bottom center;
     transition: transform .3s;
 }
 .trip-images .trip-image:hover {
@@ -94,18 +90,6 @@
 .trip-images .trip-image:hover .image {
     transform: scale(1.5) rotate(-10deg);
     opacity: .4;
-}
-.trip-images .trip-image.lion .image {
-    background-image: url(../img/lion.jpg);
-}
-.trip-images .trip-image.water-falls .image {
-    background-image: url(../img/sipi-falls.jpg);
-}
-.trip-images .trip-image.food .image {
-    background-image: url(../img/kigali.jpg);
-}
-.trip-images .trip-image.gorilla .image {
-    background-image: url(../img/gorilla.jpg);
 }
 .single-trip .trip-header {
     display: table;
@@ -158,7 +142,7 @@
     border-radius: 10px;
 }
 .single-trip .trip-details {
-    background-color: #012060;
+    background-color: #000;
     color: #fff;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
